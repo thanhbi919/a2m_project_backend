@@ -13,21 +13,20 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity(name = "Class")
 @Table(name = "class")
 public class Class {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name = "class_name")
-	private String class_name;
+	private String className;
 	
 	@Column(name ="total_stu")
-	private Integer total_stu;
+	private Integer totalStu;
 	
 	@Column(name ="teacher_id")
-	private Long teacher_id;
+	private Long teacherId;
 	
 	@Column(name = "status")
 	private String status;

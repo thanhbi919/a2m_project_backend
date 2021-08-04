@@ -26,7 +26,7 @@ public class Parent {
 	private Long id;
 	
 	@Column(name = "teacher_name")
-	private String teacher_name;
+	private String teacherName;
 	
 	@Column(name = "birthday")
 	private Date birthday;

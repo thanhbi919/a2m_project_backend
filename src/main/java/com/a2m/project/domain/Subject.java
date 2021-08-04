@@ -19,7 +19,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity(name = "Subject")
 @Table(name = "subject")
 public class Subject {
 	@Id
@@ -27,7 +26,7 @@ public class Subject {
 	private Long id;
 	
 	@Column(name ="subject_name")
-	private String subject_name;
+	private String subjectName;
 	
 	@Column(name ="status")
 	private String status;

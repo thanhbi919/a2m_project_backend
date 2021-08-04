@@ -21,7 +21,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity(name = "Student")
 @Table(name = "student")
 public class Student {
 	@Id
@@ -29,7 +28,7 @@ public class Student {
 	private Long id;
 	
 	@Column( name ="stu_name")
-	private String stu_name;
+	private String stuName;
 	
 	@Column( name ="birthday")
 	private Date birthday;
@@ -41,7 +40,7 @@ public class Student {
 	private String address;
 	
 	@Column(name = "admission_date")
-	private String admission_date;
+	private String admissionDate;
 	
 	@Column(name = "status")
 	private String status;

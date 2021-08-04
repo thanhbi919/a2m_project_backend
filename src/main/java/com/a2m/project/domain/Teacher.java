@@ -18,7 +18,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity(name = "Teacher")
 @Table(name = "teacher")
 public class Teacher {
 	@Id
@@ -26,7 +25,7 @@ public class Teacher {
 	private Long id;
 	
 	@Column(name = "teacher_name")
-	private String teacher_name;
+	private String teacherName;
 	
 	@Column(name = "birthday")
 	private Date birthday;
@@ -38,7 +37,7 @@ public class Teacher {
 	private String level;
 	
 	@Column(name = "graduation_year")
-	private String graduation_year;
+	private String graduationYear;
 	
 	@Column(name = "address")
 	private String address;
@@ -50,7 +49,7 @@ public class Teacher {
 	private String email;
 	
 	@Column(name = "work_start_date")
-	private Date work_stated_date;
+	private Date workStatedDate;
 	
 	@Column(name = "status")
 	private String status;

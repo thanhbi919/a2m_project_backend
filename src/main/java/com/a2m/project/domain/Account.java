@@ -18,7 +18,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity(name = "Account")
 @Table(name = "account") 
 public class Account {
 	@Id
@@ -35,7 +34,7 @@ public class Account {
 	private Integer status;
 	
 	@Column(name = "teacher_id")
-	private Long teacher_id;
+	private Long teacherId;
 	
 	@JsonIgnore
 	@ManyToMany(mappedBy= "accounts")

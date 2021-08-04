@@ -12,14 +12,13 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity(name = "Diary")
 @Table(name = "subclass_diary")
 public class Diary {
 	@Id
-	private Long stu_id;
+	private Long stuId;
 	
 	@Column(name ="class_id")
-	private Long class_id;
+	private Long classId;
 	
 	@Column(name = "year")
 	private String year;
