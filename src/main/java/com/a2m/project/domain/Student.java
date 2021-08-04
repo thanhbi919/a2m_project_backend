@@ -52,6 +52,12 @@ public class Student {
 			inverseJoinColumns= @JoinColumn(name ="subject_id"))
 	private List<Subject> subjects;
 	
+	
+	@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(name ="student_has_parent",
+			joinColumns = @JoinColumn(name ="sub_id"),
+			inverseJoinColumns= @JoinColumn(name ="parent_id"))
+	private List<Parent> parents;
 
 	
 
