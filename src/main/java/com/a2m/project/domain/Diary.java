@@ -11,6 +11,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
 @NoArgsConstructor
 @Table(name = "subclass_diary")
 public class Diary {

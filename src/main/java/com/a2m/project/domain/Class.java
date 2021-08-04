@@ -12,6 +12,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
 @NoArgsConstructor
 @Table(name = "class")
 public class Class {
